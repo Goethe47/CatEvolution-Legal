@@ -60,9 +60,10 @@ may collect and process information as described below.</p>
     purchase-related signals where available, and app usage time where advertising
     optimization features are enabled.</li>
   <li><strong>Google Play Games data</strong> — Google Play Games Services may authenticate the
-    player using their Play Games profile and provide the game with a stable player ID. The game
-    submits the player's high score to the Google Play Games leaderboard. Cat Evolution does not
-    use Google Play Games Saved Games or cloud saves.</li>
+    player, process the player's gamer identity (including their gamertag and avatar), provide
+    the game with a stable player ID, and collect analytics and diagnostics needed to operate and
+    improve the service. The game submits the player's high score to the Google Play Games
+    leaderboard. Cat Evolution does not use Google Play Games Saved Games or cloud saves.</li>
   <li><strong>Gameplay data</strong> — game progress, settings, and the local high score are
     stored on your device. Your high score may also be submitted to the Google Play Games
     leaderboard if Play Games authentication is available. We do not operate a server that
@@ -96,11 +97,10 @@ according to Google's Privacy Policy.</p>
 <p>The first time you open Cat Evolution, you're asked whether to allow personalized ads. You
 can change this choice at any time from the in-app menu ("Ads &amp; Privacy").</p>
 
-<p>You can also limit ad tracking at the device level:</p>
-<ul>
-  <li><strong>Android:</strong> Settings → Google → Ads → "Delete advertising ID" or "Opt out of
-    Ads Personalization".</li>
-</ul>
+<p>You can also manage advertising privacy controls on supported Android devices through
+Settings → Google → All services → Ads. Available options, including deleting or resetting the
+advertising ID and managing personalized advertising, may vary depending on your Android version
+and device manufacturer.</p>
 
 <p><strong>Residents of certain U.S. states</strong> may have the right to opt out of the sale or
 sharing of personal information for cross-context behavioral advertising. Where applicable, these
@@ -136,10 +136,10 @@ provider.</p>
 
 <h2>7. Data Security</h2>
 
-<p>Cat Evolution does not transmit gameplay progress to servers operated by Goethe47. Third-party
-services used by the game state that data transmitted through their SDKs is protected in transit.
-No method of electronic transmission or storage is completely secure, and we cannot guarantee
-absolute security.</p>
+<p>Cat Evolution does not transmit gameplay progress to servers operated by Goethe47. Unity states
+that data collected through the Unity Ads SDK is encrypted in transit. Google Play Games data is
+processed according to Google's security and privacy practices. No method of electronic
+transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
 <h2>8. Changes to This Policy</h2>
 
