@@ -44,12 +44,12 @@ may collect and process information as described below.</p>
     in the protected under-18 group or the adult 18-plus group. The entered date of birth is not
     saved, logged, or transmitted. Only the resulting age category is stored locally on the device.
     The category is used to select the appropriate advertising privacy configuration.</li>
-  <li><strong>Advertising and device data</strong> — Unity LevelPlay, Unity Ads, and the
-    advertising services enabled for the app may process advertising and other device identifiers,
-    IP address, approximate location derived from IP, device and operating system information, app
-    identifiers, ad impressions, ad clicks and other interactions with advertisements, diagnostics,
-    fraud-prevention signals, and app usage information. The exact processing is limited by the
-    player's derived age category and advertising choices as described below.</li>
+  <li><strong>Advertising and device data</strong> — Unity LevelPlay and Unity Ads may process
+    advertising and other device identifiers, IP address, approximate location derived from IP,
+    device and operating system information, app identifiers, ad impressions, ad clicks and other
+    interactions with advertisements, diagnostics, fraud-prevention signals, and app usage
+    information. The exact processing is limited by the player's derived age category and
+    advertising choices as described below.</li>
   <li><strong>Google Play Games data</strong> — Google Play Games Services may authenticate the
     player, process the player's gamer identity (including gamertag and avatar), provide the game
     with a stable player ID, and collect analytics and diagnostics needed to operate and improve
@@ -85,8 +85,9 @@ used on the device only to derive one of two advertising groups and is then disc
 <ul>
   <li><strong>Protected under 18</strong> — the personalized-ad choice is not offered. The app
     configures LevelPlay and Unity Ads for restricted, contextual, non-behavioral advertising,
-    sends child/protected-user privacy signals, requests use of only Families-compatible demand,
-    and tells the advertising SDK not to access the Android advertising identifier for that user.</li>
+    sets child-directed and non-behavioral advertising signals, configures LevelPlay to initialize
+    only Families Self-Certified advertising SDKs for that user, and prevents the advertising SDK
+    from accessing the Android Advertising ID for that user.</li>
   <li><strong>Adult 18 plus</strong> — the player is asked to choose personalized or
     non-personalized advertising. Personalized advertising is enabled only after this explicit
     choice.</li>
@@ -109,11 +110,11 @@ recorded as an affirmative permission to sell or share data.</p>
 Ads. Available options may vary by Android version and device manufacturer.</p>
 
 <h2>4. Data Retention</h2>
-<p>The entered date of birth is not retained. The derived age category, advertising choices,
-game progress, and settings remain locally on the device until reset, app data is cleared, or the
-app is uninstalled. Depending on Android backup settings, local data may be backed up and restored
-by the operating system. Data held by Unity and Google is retained and deleted according to their
-own policies linked above.</p>
+<p>The entered date of birth is not retained. The derived age category, advertising choices, game
+progress, and settings remain locally on the device until they are reset, the app's storage is
+cleared, or the app is uninstalled. Cat Evolution is configured not to participate in Android
+application backup and restore. Data held by Unity and Google is retained and deleted according
+to their own policies linked above.</p>
 
 <h2>5. Children's and Protected Players' Privacy</h2>
 <p>Cat Evolution is configured as a mixed-audience app. It uses a neutral age screen before
@@ -133,10 +134,10 @@ you. Cat Evolution does not maintain user accounts or server-side gameplay profi
     storage or uninstalling the app.</li>
   <li>Google Play Games data, including leaderboard data, can be managed or deleted through your
     Google Play Games profile or Google Account controls.</li>
-  <li>Requests about advertising data must be submitted through the privacy request mechanisms
-    provided by Unity and applicable advertising partners.</li>
+  <li>Requests concerning advertising data may be submitted through the privacy request
+    mechanisms provided by Unity and any applicable advertising partners.</li>
 </ul>
-<p>Contact us first using the email below if you need help identifying the appropriate provider.</p>
+<p>You may contact us using the email below if you need help identifying the appropriate provider.</p>
 
 <h2>7. Data Security</h2>
 <p>Cat Evolution does not transmit gameplay progress or the entered date of birth to servers
